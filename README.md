@@ -26,10 +26,7 @@ User Query → Embedding → Similarity Search → Context
 LLM (Groq)
 ↓
 Final Answer
-
-
 ---
-
 ## 🛠️ Tech Stack
 
 | Technology | Purpose |
@@ -51,8 +48,6 @@ rag-document-chatbot/
 ├── chat.js # CLI chatbot interface
 ├── cg-internal-docs.pdf # Sample document
 └── .env # API keys
-
-
 ---
 
 ## ⚙️ Setup Instructions
@@ -60,9 +55,13 @@ rag-document-chatbot/
 ### 1️⃣ Clone Repository
 
 git clone https://github.com/7S-Bhavesh/rag-document-chatbot.git
+
 cd rag-document-chatbot
+
 npm install
+
 PINECONE_API_KEY=your_key
+
 PINECONE_INDEX_NAME=your_index
 
 JINA_API_KEY=your_key
@@ -70,4 +69,5 @@ JINA_API_KEY=your_key
 GROQ_API_KEY=your_key
 
 node rag.js
+
 node chat.js
