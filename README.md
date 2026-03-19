@@ -41,14 +41,20 @@ Final Answer
 ---
 
 ## 📂 Project Structure
-rag-document-chatbot/
+rag-chatbot/
 │
-├── prepare.js # Document processing & embedding
-├── rag.js # Entry point to index PDF
-├── chat.js # CLI chatbot interface
-├── cg-internal-docs.pdf # Sample document
-└── .env # API keys
----
+├── src/
+│   ├── prepare.js        # Document loading, embedding & Pinecone indexing
+│   ├── rag.js            # Entry point to index a document
+│   └── chat.js           # CLI chat interface with RAG
+│
+├── docs/
+│   └── cg-internal-docs.pdf   # Source document(s) to be indexed
+│
+├── .env.example          # Template for required env variables
+├── .gitignore            # Ignore .env, node_modules, etc.
+├── package.json
+
 
 ## ⚙️ Setup Instructions
 
